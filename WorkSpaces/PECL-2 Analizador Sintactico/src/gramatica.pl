@@ -20,7 +20,7 @@ g_nominal(gn(D,N,A)) --> determinante(D), nombre(N), adjetivo(A).
 g_nominal(gn(D,N,O)) --> determinante(D), nombre(N), oracion(O).
 
 g_verbal(gv(V))    --> verbo(V).
-g_verbal(gv(V, GN)) --> verbo(V), g_nominal(GN).
+g_verbal(gv(V,GN)) --> verbo(V), g_nominal(GN).
 g_verbal(gv(V,P,GN))    --> verbo(V), preposicion(P), g_nominal(GN).
 g_verbal(gv(V,A))       --> verbo(V), adjetivo(A).
 
@@ -73,7 +73,7 @@ n(alumna).
 n(alumnas).
 n(universidad).
 
-verbo(v(X))  --> [X], {v(X)}.
+verbo(v(X))  --> [X],{v(X)}.
 v(ama).
 v(era).
 v(come).
@@ -94,7 +94,7 @@ conj_c(y).
 conjuncion_sub(conj_s(X))  --> [X],{conj_s(X)}.
 conj_s(que).
 
-adverbio(adv(X)) --> [X], {adv(X)}.
+adverbio(adv(X)) --> [X],{adv(X)}.
 adv(muy).
 adv(bien).
 
