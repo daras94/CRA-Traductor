@@ -2,7 +2,7 @@
 		
 	]).
 % Importamos el diccionario Ingles.
-:- consult("../diccionario/dicIN.pl").
+:- consult('../diccionario/dicIN.pl').
 
 /*****************************************************************************************/
 /*       Reglas gramaticales castellano Basadose en la sintasis delejercicio 3.1 y 4. 	 */

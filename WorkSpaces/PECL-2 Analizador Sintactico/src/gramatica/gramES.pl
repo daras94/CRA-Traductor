@@ -3,7 +3,7 @@
 	]).
 
 % Importamos el diccionario en castellano.
-:- consult("../diccionario/dicES.pl").
+:- consult('../diccionario/dicES.pl').
 
 
 /*****************************************************************************************/
