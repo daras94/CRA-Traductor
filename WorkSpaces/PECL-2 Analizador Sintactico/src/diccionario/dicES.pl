@@ -143,4 +143,5 @@ articulo(m(art), m, sg) --> [el].
 
 % Los plurales.
 articulo(m(art), f, pl) --> [las].
+articulo(m(art), m, pl) --> [los].
 
