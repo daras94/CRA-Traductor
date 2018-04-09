@@ -8,34 +8,23 @@
 /*****************************************************************************************/
 /*                                                                      Determinantes:                                                                           */
 /*****************************************************************************************/
-determinante(det(det_1), f, sg) --> [la]; [una].
-determinante(det(det_2), f, pl) --> [las]; [unas].
-determinante(det(det_1), m, sg) --> [el]; [un].
-determinante(det(det_2), m, pl) --> [los]; [unos].
+determinante(det(det_1), f, sg) --> [la].
+determinante(det(det_1), m, sg) --> [el].
+determinante(det(det_2), f, pl) --> [las].
+determinante(det(det_2), m, pl) --> [los].
+determinante(det(det_3), f, sg) --> [una].
+determinante(det(det_3), m, sg) --> [un].
+determinante(det(det_4), f, pl) --> [unas].
+determinante(det(det_4), m, pl) --> [unos].
+determinante(det(det_5), m, sg) --> [mi].
+
 
 /*****************************************************************************************/
 /*                                                                      Preposiciones:                                                                           */
 /*****************************************************************************************/
 preposicion(prep(prep_1))       --> [a].
-preposicion(prep(prep_2))       --> [ante].
-preposicion(prep(prep_3))       --> [bajo].
-preposicion(prep(prep_4))       --> [con].
-preposicion(prep(prep_5))       --> [contra].
-preposicion(prep(prep_6))       --> [de].
-preposicion(prep(prep_7))       --> [desde].
-preposicion(prep(prep_8))       --> [en].
-preposicion(prep(prep_9))       --> [entre].
-preposicion(prep(prep_10))      --> [hacia].
-preposicion(prep(prep_11))      --> [hasta].
-preposicion(prep(prep_12))      --> [para].
-preposicion(prep(prep_13))      --> [por].
-preposicion(prep(prep_14))      --> [según].
-preposicion(prep(prep_15))      --> [sin].
-preposicion(prep(prep_16))      --> [so].
-preposicion(prep(prep_17))      --> [sobre].
-preposicion(prep(prep_18))      --> [tras].
-preposicion(prep(prep_19))      --> [durante].
-preposicion(prep(prep_20))      --> [mediante].
+preposicion(prep(prep_2))       --> [en].
+
 
 /*****************************************************************************************/
 /*                                                                              Nombres:                                                                                 */
@@ -78,53 +67,49 @@ verbo(v(v_5), sg) --> [era].
 verbo(v(v_6), sg) --> [come].
 verbo(v(v_7), sg) --> [cazó].
 verbo(v(v_8), sg) --> [es].
+verbo(v(v_9), sg) --> [comes].
+verbo(v(v_10), sg) --> [estudia].
+verbo(v(v_11), sg) --> [persiguió].
+verbo(v(v_12), sg) --> [canta].
+verbo(v(v_13), sg) --> [toma].
+verbo(v(v_14), sg) --> [lee].
+verbo(v(v_15), sg) --> [escribió].
 
 % Los plurales.
 verbo(v(v_1), pl) --> [cortan].
 verbo(v(v_2), pl) --> [envuelven].
 verbo(v(v_3), pl) --> [rompen].
 verbo(v(v_4), pl) --> [aman].
-verbo(v(v_5), pl) --> [eran].
-verbo(v(v_6), pl) --> [comen].
-verbo(v(v_7), pl) --> [cazan].
-verbo(v(v_8), pl) --> [son].
+verbo(v(v_5), pl) --> [comen].
+verbo(v(v_6), pl) --> [vimos].
                           
 /*****************************************************************************************/
 /*                                                                              Adjetivos:                                                                               */
 /*****************************************************************************************/                        
 % Los Singulares Invariables.
-adjetivo(adj(adj_1), sg) --> [roja].
-adjetivo(adj(adj_2), sg) --> [negro].
-adjetivo(adj(adj_4), sg) --> [gris].
-adjetivo(adj(adj_3), sg) --> [grande].
-adjetivo(adj(adj_5), sg) --> [pequeño].
-adjetivo(adj(adj_6), sg) --> [delgado].
-adjetivo(adj(adj_7), sg) --> [alta].
-
-%Posesivos
-adjetivo(adj(adj_8), sg) --> [mi].
+adjetivo(adj(adj_1)) --> [roja].
+adjetivo(adj(adj_2)) --> [negro].
+adjetivo(adj(adj_4)) --> [gris].
+adjetivo(adj(adj_3)) --> [grande].
+adjetivo(adj(adj_5)) --> [pequeño].
+adjetivo(adj(adj_6)) --> [delgado].
+adjetivo(adj(adj_7)) --> [alta].
 
 /*****************************************************************************************/
 /*                                                                              Pronombres:                                                                              */
 /*****************************************************************************************/
 % Personales
-pronombre(pron(pron_1), sg) --> [yo].
-pronombre(pron(pron_2), sg) --> [tú].
-pronombre(pron(pron_3), sg) --> [él].
-pronombre(pron(pron_4), sg) --> [ella].
-pronombre(pron(pron_5), sg) --> [ello].
-pronombre(pron(pron_6), pl) --> [nosotros].
-pronombre(pron(pron_7), pl) --> [vosotros].
-pronombre(pron(pron_8), pl) --> [ellos].
+pronombre(pron(pron_1), sg) --> [tú].
+pronombre(pron(pron_2), sg) --> [él].
+pronombre(pron(pron_3), pl) --> [ellos].
                     
 %relativo
-pronombre(pron(pron_9))   --> [que].
+pronombre(pron(pron_4))   --> [que].
 
 /*****************************************************************************************/
 /*                                                                              Conjunciones:                                                                    */
 /*****************************************************************************************/
 % Subordinadas
-
 % Cordinadas.
 conjuncion_coord(conj_c(conj_c1)) --> [y].
 
@@ -137,11 +122,4 @@ adverbio(adv(adv_2)) --> [bien].
 /*****************************************************************************************/
 /*                                                                              Articulos:                                                                               */
 /*****************************************************************************************/
-% Los Singulares.
-articulo(m(art), f, sg) --> [la].
-articulo(m(art), m, sg) --> [el].
-
-% Los plurales.
-articulo(m(art), f, pl) --> [las].
-articulo(m(art), m, pl) --> [los].
 

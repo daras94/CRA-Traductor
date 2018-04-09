@@ -9,36 +9,17 @@
 /*****************************************************************************************/
 /*                                                                      modificadores:                                                                           */
 /*****************************************************************************************/
-modifier(m(art))                --> [the].
-modifier(det(det_1))    --> [the]; [a]; [an].
-modifier(det(det_2))    --> [the]; [some].
-modifier(det(det_1))    --> [the]; [a]; [an].
-modifier(det(det_2))    --> [the]; [some].
-
+determiner(det(det_1))  --> [the].
+determiner(det(det_2))  --> [the].
+determiner(det(det_3))  --> [a].
+determiner(det(det_4))  --> [some].
+determiner(det(det_5))  --> [my].
 
 /*****************************************************************************************/
 /*                                                                      prepositionses:                                                                          */
 /*****************************************************************************************/
-prepositions(prep(prep_1))              --> [to].
-prepositions(prep(prep_2))              --> [before].
-prepositions(prep(prep_3))              --> [under].
-prepositions(prep(prep_4))              --> [with]; [by]; [cum].
-prepositions(prep(prep_5))              --> [to].
-prepositions(prep(prep_6))              --> [from].
-prepositions(prep(prep_7))              --> [since].
-prepositions(prep(prep_8))              --> [in].
-prepositions(prep(prep_9))              --> [between].
-prepositions(prep(prep_10))     --> [toward].
-prepositions(prep(prep_11))     --> [until].
-prepositions(prep(prep_12))     --> [for].
-prepositions(prep(prep_13))     --> [by].
-prepositions(prep(prep_14))     --> [according].
-prepositions(prep(prep_15))     --> [without].
-prepositions(prep(prep_16))     --> [so].
-prepositions(prep(prep_17))     --> [on].
-prepositions(prep(prep_18))     --> [after].
-prepositions(prep(prep_19))     --> [during].
-prepositions(prep(prep_20))     --> [through].
+prepositions(prep(prep_1))              --> [''].
+prepositions(prep(prep_2))              --> [at].
 
 /*****************************************************************************************/
 /*                                                                              nouns:                                                                           */
@@ -86,7 +67,9 @@ verb(v(v_3), pl)                --> [break].
 verb(v(v_4), pl)                --> [love].
 verb(v(v_5), pl)                --> [were].
 verb(v(v_6), pl)                --> [eat].
+verb(v(v_7), pl)                --> [hunt].
 verb(v(v_7), pl)                --> [are].
+
 
 /*****************************************************************************************/
 /*                                                                              adjectives:                                                                              */
@@ -105,14 +88,9 @@ adjective(adj(adj_8), sg) --> [my].
 /*****************************************************************************************/
 /*                                                                              pronouns:                                                                              */
 /*****************************************************************************************/
-pronoun(pron(pron_1), sg) --> [i].
-pronoun(pron(pron_2), sg) --> [you].
-pronoun(pron(pron_3), sg) --> [he].
-pronoun(pron(pron_4), sg) --> [she].
-pronoun(pron(pron_5), sg) --> [it].
-pronoun(pron(pron_6), pl) --> [we].
-pronoun(pron(pron_7), pl) --> [you].
-pronoun(pron(pron_8), pl) --> [they].
+pronoun(pron(pron_1), sg) --> [you].
+pronoun(pron(pron_2), sg) --> [he].
+pronoun(pron(pron_3), pl) --> [they].
 % Relativo
 pronoun(pron(pron_9)) --> [that].
 
