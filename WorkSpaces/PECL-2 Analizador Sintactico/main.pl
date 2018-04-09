@@ -23,8 +23,8 @@ translate :-  nl, write('┏━━━━━━━━━━━━━━━━━�
 			  nl, write('┃	13) - Juan es delgado y Marı́a es alta.                       - John is thin and Mary is tall.                 ┃'),
 			  nl, write('┃	14) - Oscar Wilde escribió El Fantasma de Canterville        - Oscar Wilde wrote The Canterville Ghost        ┃'),
 			  nl, write('┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛'),
-			  nl, write(' - Seleccione la traducion es-in o in-es (pulsa x para salir): '), read(Lang), 
 			  nl, write(' - Seleccione la frase a traducir del 0: (pulsa x para salir): '), read(Y),
+			  nl, write(' - Seleccione la traducion es-in o in-es (pulsa x para salir): '), read(Lang), 
 			  nl, embebed_bd(X, Y, Lang), select_lang(Lang, X).
 
 embebed_bd(X, Y, Lang) :- ((Y = 0,  Lang = es-in) -> (X=[el, hombre, come, una, manzana], !);		               	   
