@@ -8,3 +8,4 @@
 
 test :- orracion(X, [la,mujer,come,manzanas], []), draw(X), nl, write(X).
 
+test_1 :- oracion(X,[el,hombre,come,la,manzana],[]), draw(X).
