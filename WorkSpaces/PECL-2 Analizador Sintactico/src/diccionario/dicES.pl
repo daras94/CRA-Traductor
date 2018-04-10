@@ -61,8 +61,7 @@ nombre(n(n_16), m, sg) --> [canario].
 nombre(n(n_17), m, sg) --> [oscar]; [wilde].                              
 nombre(n(n_18), m, sg) --> [café].   
 nombre(n(n_18), f, sg) --> [café].   
-nombre(n(n_19), m, sg) --> [periódico].   
-nombre(n(n_19), f, sg) --> [periódico]. 
+nombre(n(n_19), m, sg) --> [periódico].    
 nombre(n(n_20), m, sg) --> [fantasma]. 
 nombre(n(n_21), m, sg) --> [canterville]. 
 /*****************************************************************************************/

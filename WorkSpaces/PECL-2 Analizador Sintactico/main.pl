@@ -56,10 +56,10 @@ embebed_bd(X, Y, Lang) :- ((Y = 0,  Lang = es-in) -> (X=[el, hombre, come, una, 
 						   (Y = 12, Lang = in-es) -> (X=[john, is, thin, and, mary, is, tall], !);
 						   (Y = 13, Lang = es-in) -> (X=[oscar, wilde, escribió, el, fantasma, de, canterville], !);
 						   (Y = 13, Lang = in-es) -> (X=[oscar, wilde, wrote, the, canterville, host], !);
-						   (Y = x;  Lang = x	) -> (nl, write(" - As salido ADIOS!!!."));
+						   (Y = x;  Lang = x	) -> (nl, write(" - As salido ADIOS!!!."), !);
 						   (Y = _,  Lang = _    ) -> (nl, write(" - ERROR: Opciones escogidas no validas."), translate)).
 
-select_lang(Lang, Z) :- ((Lang = es-in) -> (gramES:oracion(Y, Z,  []), nl, write(Y), gramIN:sentence(Y, IN, []), draw(Y), nl, write(' - Traduccíon ES-IN: '), writeln(IN), translate);    % Español - Ingles.
-					  	 (Lang = in-es) -> (gramES:oracion(Y, ES, []), nl, write(Y), gramIN:sentence(Y, Z,  []), draw(Y), nl, write(' - Traduccíon IN-ES: '), writeln(ES), translate)).   % Ingles  - Español. 
+select_lang(Lang, Z) :- ((Lang = es-in) -> (gramES:oracion(Y, Z,  []), nl, write(Y), /*gramIN:sentence(Y, IN, []),*/ draw(Y), nl, write(' - Traduccíon ES-IN: '), /*writeln(IN),*/ translate);    % Español - Ingles.
+					  	 (Lang = in-es) -> (gramES:oracion(Y, ES, []), nl, write(Y), /*gramIN:sentence(Y, Z,  []),*/ draw(Y), nl, write(' - Traduccíon IN-ES: '), /*writeln(ES),*/ translate)).   % Ingles  - Español. 
 					  
 					  
