@@ -9,7 +9,7 @@
 translate :-  nl, write('┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓'), 
                           nl, write('?  ---> Collecion de frases a Traducir:                                                                          ?'),
                           nl, write('???????????????????????????????????????????????????????????????????????????????????????????????????????????????????'),
-                          nl, write('?  0)  - El hombre come una manzana.                            - The man eats an apple.                                         ?'),
+                          nl, write('?  0)  - El hombre come una manzana.                            - The man eats a apple.                                         ?'),
                           nl, write('?  1)  - Ellos comen manzanas.                                  - They eat some apples.                                          ?'),
                           nl, write('?  2)  - Tú comes una manzana roja.                             - You eat a red apple.                                           ?'),
                           nl, write('?  3)  - Juan ama a Mari´a.                                             - John loves Mary.                                               ?'),
@@ -29,7 +29,7 @@ translate :-  nl, write('┏━━━━━━━━━━━━━━━━━�
                           nl, embebed_bd(X, Y, Lang), select_lang(Lang, X).
 
 embebed_bd(X, Y, Lang) :- ((Y = 0,  Lang = es-in) -> (X=[el, hombre, come, una, manzana], !);                              
-                                                   (Y = 0,  Lang = in-es) -> (X=[the, man, eats, an, apple], !);
+                                                   (Y = 0,  Lang = in-es) -> (X=[the, man, eats, a, apple], !);
                                                    (Y = 1,  Lang = es-in) -> (X=[ellos, comen, manzanas], !);                                              
                                                    (Y = 1,  Lang = in-es) -> (X=[they, eat, some, apples], !);
                                                    (Y = 2,  Lang = es-in) -> (X=[tú, comes, una, manzana, roja], !); 

@@ -51,9 +51,9 @@ noun(n(n_13), sg)               --> [university].
 /*                                     verbs:                                            */
 /*****************************************************************************************/
 % Los Singulares
-%verb(v(v_1), sg)                --> [cuts].
-%verb(v(v_2), sg)                --> [wraps].
-%verb(v(v_3), sg)                --> [breaks].
+verb(v(v_1), sg)                --> [cuts].
+verb(v(v_2), sg)                --> [wraps].
+verb(v(v_3), sg)                --> [breaks].
 verb(v(v_6), sg)                --> [eats].
 verb(v(v_8), sg)                --> [eat].
 verb(v(v_4), sg)                --> [loves].
@@ -66,9 +66,9 @@ verb(v(v_14), sg)               --> [reads].
 verb(v(v_15), sg)               --> [wrote].
 
 % Los Plurales.
-%verb(v(v_1), pl)                --> [cut].
-%verb(v(v_2), pl)                --> [wrap].
-%verb(v(v_3), pl)                --> [break].
+verb(v(v_1), pl)                --> [cut].
+verb(v(v_2), pl)                --> [wrap].
+verb(v(v_3), pl)                --> [break].
 verb(v(v_6), pl)                --> [eat].
 verb(v(v_17),pl)                --> [saw].
 

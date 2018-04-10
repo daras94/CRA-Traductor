@@ -21,12 +21,12 @@ sentence(o(O1,CC,O2))      --> sentence(O1), dicIN:conjunctions_coord(CC), sente
 /*****************************************************************************************/
 /*                                Grupos Nominales:                                      */
 /*****************************************************************************************/
-nom_p(sn(S),N)       --> dicIN:noun(S,_,N).
-nom_p(sn(S1,S2),N)   --> dicIN:noun(S1,_,N), dicIN:noun(S2,_,N).
-nom_p(sn(M,S),N)     --> dicIN:determiner(M,G,N), dicIN:noun(S,G,N).
-nom_p(sn(M,S,SA),N)  --> dicIN:determiner(M,G,N), dicIN:noun(S,G,N), nom_adj(SA).
-nom_p(sn(M,S,SP),N)  --> dicIN:determiner(M,G,N), dicIN:noun(S,G,N), nom_pre(SP, N).
-nom_p(sn(M,S,CC),N)  --> dicIN:determiner(M,G,N), dicIN:noun(S,G,N), dicIN:pronoun(CC).
+nom_p(sn(S),N)       --> dicIN:noun(S,N).
+nom_p(sn(S1,S2),N)   --> dicIN:noun(S1,N), dicIN:noun(S2,N).
+nom_p(sn(M,S),N)     --> dicIN:determiner(M), dicIN:noun(S,N).
+nom_p(sn(M,S,SA),N)  --> dicIN:determiner(M), nom_adj(SA), dicIN:noun(S,N).
+nom_p(sn(M,S,SP),N)  --> dicIN:determiner(M), dicIN:noun(S,N), nom_pre(SP, N).
+nom_p(sn(M,S,CC),N)  --> dicIN:determiner(M), dicIN:noun(S,N), dicIN:pronoun(CC).
 
 /*****************************************************************************************/
 /*                                Grupos Verbales:                                       */
