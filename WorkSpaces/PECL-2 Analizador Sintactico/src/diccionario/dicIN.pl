@@ -10,11 +10,10 @@
 /*                                 modificadores:                                        */
 /*****************************************************************************************/
 determiner(det(det_1))  --> [the].
-determiner(det(det_2))  --> [the].
+%determiner(det(det_2))  --> [the].
 determiner(det(det_3))  --> [a].
 determiner(det(det_4))  --> [some].
 determiner(det(det_5))  --> [my].
-
 /*****************************************************************************************/
 /*                                prepositionses:                                        */
 /*****************************************************************************************/
@@ -57,7 +56,7 @@ verb(v(v_2), sg)                --> [wraps].
 verb(v(v_3), sg)                --> [breaks].
 verb(v(v_4), sg)                --> [loves].
 verb(v(v_5), sg)                --> [was].
-verb(v(v_6), sg)                --> [eats].
+verb(v(v_6), sg)                --> [eat].
 verb(v(v_7), sg)                --> [is].
 
 % Los Plurales.
@@ -67,7 +66,6 @@ verb(v(v_3), pl)                --> [break].
 verb(v(v_4), pl)                --> [love].
 verb(v(v_5), pl)                --> [were].
 verb(v(v_6), pl)                --> [eat].
-verb(v(v_7), pl)                --> [hunt].
 verb(v(v_7), pl)                --> [are].
 
 

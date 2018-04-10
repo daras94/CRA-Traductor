@@ -10,8 +10,8 @@
 /*****************************************************************************************/
 determinante(det(det_1), f, sg) --> [la].
 determinante(det(det_1), m, sg) --> [el].
-determinante(det(det_2), f, pl) --> [las].
-determinante(det(det_2), m, pl) --> [los].
+determinante(det(det_1), f, pl) --> [las].
+determinante(det(det_1), m, pl) --> [los].
 determinante(det(det_3), f, sg) --> [una].
 determinante(det(det_3), m, sg) --> [un].
 determinante(det(det_4), f, pl) --> [unas].
@@ -24,6 +24,7 @@ determinante(det(det_5), m, sg) --> [mi].
 /*****************************************************************************************/
 preposicion(prep(prep_1))       --> [a].
 preposicion(prep(prep_2))       --> [en].
+preposicion(prep(prep_3))       --> [de].
 
 
 /*****************************************************************************************/
@@ -52,48 +53,60 @@ nombre(n(n_11), m, pl) --> [alumnos].
 nombre(n(n_12), f, sg) --> [alumna].
 nombre(n(n_12), f, pl) --> [alumnas].
 nombre(n(n_13), m, sg) --> [universidad].
-
-                                 
-
+nombre(n(n_13), f, sg) --> [universidad].
+nombre(n(n_14), m, sg) --> [perro].
+nombre(n(n_15), m, sg) --> [jardín].
+nombre(n(n_15), f, sg) --> [jardín].
+nombre(n(n_16), m, sg) --> [canario].
+nombre(n(n_17), m, sg) --> [oscar]; [wilde].                              
+nombre(n(n_18), m, sg) --> [café].   
+nombre(n(n_18), f, sg) --> [café].   
+nombre(n(n_19), m, sg) --> [periódico].   
+nombre(n(n_19), f, sg) --> [periódico]. 
+nombre(n(n_20), m, sg) --> [fantasma]. 
+nombre(n(n_21), m, sg) --> [canterville]. 
 /*****************************************************************************************/
 /*                                     Verbos:                                           */
 /*****************************************************************************************/
 % Los Singulares.
-verbo(v(v_1), sg) --> [corta].
-verbo(v(v_2), sg) --> [envuelve].
-verbo(v(v_3), sg) --> [rompe].
-verbo(v(v_4), sg) --> [ama].
-verbo(v(v_5), sg) --> [era].
-verbo(v(v_6), sg) --> [come].
-verbo(v(v_7), sg) --> [cazó].
-verbo(v(v_8), sg) --> [es].
-verbo(v(v_9), sg) --> [comes].
+verbo(v(v_1), sg)  --> [corta].
+verbo(v(v_2), sg)  --> [envuelve].
+verbo(v(v_3), sg)  --> [rompe].
+verbo(v(v_4), sg)  --> [ama].
+verbo(v(v_5), sg)  --> [era].
+verbo(v(v_6), sg)  --> [come].
+verbo(v(v_7), sg)  --> [es].
+verbo(v(v_8), sg)  --> [comes].
 verbo(v(v_10), sg) --> [estudia].
 verbo(v(v_11), sg) --> [persiguió].
 verbo(v(v_12), sg) --> [canta].
 verbo(v(v_13), sg) --> [toma].
 verbo(v(v_14), sg) --> [lee].
 verbo(v(v_15), sg) --> [escribió].
+verbo(v(v_16), sg) --> [persiguió].
 
 % Los plurales.
 verbo(v(v_1), pl) --> [cortan].
 verbo(v(v_2), pl) --> [envuelven].
 verbo(v(v_3), pl) --> [rompen].
 verbo(v(v_4), pl) --> [aman].
-verbo(v(v_5), pl) --> [comen].
-verbo(v(v_6), pl) --> [vimos].
+verbo(v(v_6), pl) --> [comen].
+verbo(v(v_17),pl) --> [vimos].
                           
 /*****************************************************************************************/
 /*                                  Adjetivos:                                           */
 /*****************************************************************************************/                        
 % Los Singulares Invariables.
-adjetivo(adj(adj_1)) --> [roja].
-adjetivo(adj(adj_2)) --> [negro].
-adjetivo(adj(adj_4)) --> [gris].
-adjetivo(adj(adj_3)) --> [grande].
-adjetivo(adj(adj_5)) --> [pequeño].
-adjetivo(adj(adj_6)) --> [delgado].
-adjetivo(adj(adj_7)) --> [alta].
+adjetivo(adj(adj_1))  --> [roja].
+adjetivo(adj(adj_2))  --> [negro].
+adjetivo(adj(adj_4))  --> [gris].
+adjetivo(adj(adj_3))  --> [grande].
+adjetivo(adj(adj_5))  --> [pequeño].
+adjetivo(adj(adj_6))  --> [delgado].
+adjetivo(adj(adj_7))  --> [alta].
+adjetivo(adj(adj_8))  --> [amarillo].
+adjetivo(adj(adj_9))  --> [delgado].
+adjetivo(adj(adj_10)) --> [alta].
 
 /*****************************************************************************************/
 /*                                  Pronombres:                                          */
@@ -104,20 +117,22 @@ pronombre(pron(pron_2), sg) --> [él].
 pronombre(pron(pron_3), pl) --> [ellos].
                     
 %relativo
-pronombre(pron(pron_4))   --> [que].
+%pronombre(pron(pron_4), sg) --> [que].
 
 /*****************************************************************************************/
 /*                                 Conjunciones:                                         */
 /*****************************************************************************************/
 % Subordinadas
 % Cordinadas.
-conjuncion_coord(conj_c(conj_c1)) --> [y].
+conjuncion_s(conj_s(conj_s1)) --> [que].
+conjuncion_c(conj_c(conj_c1)) --> [y].
 
 /*****************************************************************************************/
 /*                                 Adverbios:                                            */
 /*****************************************************************************************/
 adverbio(adv(adv_1)) --> [muy].
 adverbio(adv(adv_2)) --> [bien].
+adverbio(adv(adv_3)) --> [ayer].
 
 /*****************************************************************************************/
 /*                                 Articulos:                                            */
