@@ -35,19 +35,12 @@ g_nominal(sn(M,S,SB,SA),N)  --> dicES:determinante(M,G,N), dicES:nombre(S,G,N), 
 /*****************************************************************************************/
 /*                                Grupos Verbales:                                       */
 /*****************************************************************************************/
-<<<<<<< Updated upstream
-g_verbal(sv(V),N)       --> dicES:verbo(V, N).
-g_verbal(sv(V,SN), N)   --> dicES:verbo(V, N), g_nominal(SN, N).
-g_verbal(sv(V,SP), N)   --> dicES:verbo(V, N), g_prepocicional(SP, N).
-g_verbal(sv(V,SAJ), N)  --> dicES:verbo(V, N), g_adjetival(SAJ).
-g_verbal(sv(V,SAV), N)  --> dicES:verbo(V, N), g_adverbial(SAV, N).
-=======
 g_verbal(sv(V),N)       --> dicES:verbo(V,N).
 g_verbal(sv(V,SN), N)   --> dicES:verbo(V,N), g_nominal(SN, N).
 g_verbal(sv(V,SP), N)  	--> dicES:verbo(V,N), g_prepocicional(SP,N).
 g_verbal(sv(V,SAJ), N)  --> dicES:verbo(V,N), g_adjetival(SAJ).
 g_verbal(sv(V,SAV), N)  --> dicES:verbo(V,N), g_adverbial(SAV,N).
->>>>>>> Stashed changes
+
 
 /*****************************************************************************************/
 /*                                Grupos Pronominal:                                     */
@@ -57,7 +50,7 @@ g_pronominal(sp(P,V),N)         --> dicES:pronombre(P, N), g_verbal(V, N).
 /*****************************************************************************************/
 /*                                Grupos Adjetival:                                      */
 /*****************************************************************************************/
-g_adjetival(saj(A))                 --> dicES:adjetivo(A).
+g_adjetival(saj(A))             --> dicES:adjetivo(A).
 g_adjetival(saj(AJ, SP))        --> dicES:adjetivo(AJ),  g_prepocicional(SP, _).
 g_adjetival(saj(ADV, AJ))       --> dicES:adverbio(ADV), dicES:adjetivo(AJ).
 g_adjetival(saj(ADV, AJ, SP))   --> dicES:adverbio(ADV), dicES:adjetivo(AJ), g_prepocicional(SP, _).
