@@ -68,29 +68,27 @@ nombre(n(n_21), m, sg) --> [canterville].
 /*                                     Verbos:                                           */
 /*****************************************************************************************/
 % Los Singulares.
-verbo(v(v_1), sg)  --> [corta].
-verbo(v(v_2), sg)  --> [envuelve].
-verbo(v(v_3), sg)  --> [rompe].
-verbo(v(v_4), sg)  --> [ama].
-verbo(v(v_5), sg)  --> [era].
+%verbo(v(v_1), sg)  --> [corta].
+%verbo(v(v_2), sg)  --> [envuelve].
+%verbo(v(v_3), sg)  --> [rompe].
 verbo(v(v_6), sg)  --> [come].
-verbo(v(v_7), sg)  --> [es].
 verbo(v(v_8), sg)  --> [comes].
+verbo(v(v_4), sg)  --> [ama].
 verbo(v(v_10), sg) --> [estudia].
 verbo(v(v_11), sg) --> [persiguió].
+verbo(v(v_7), sg)  --> [es].
 verbo(v(v_12), sg) --> [canta].
 verbo(v(v_13), sg) --> [toma].
 verbo(v(v_14), sg) --> [lee].
 verbo(v(v_15), sg) --> [escribió].
-verbo(v(v_16), sg) --> [persiguió].
 
 % Los plurales.
-verbo(v(v_1), pl) --> [cortan].
-verbo(v(v_2), pl) --> [envuelven].
-verbo(v(v_3), pl) --> [rompen].
-verbo(v(v_4), pl) --> [aman].
+%verbo(v(v_1), pl) --> [cortan].
+%verbo(v(v_2), pl) --> [envuelven].
+%verbo(v(v_3), pl) --> [rompen].
 verbo(v(v_6), pl) --> [comen].
 verbo(v(v_17),pl) --> [vimos].
+
                           
 /*****************************************************************************************/
 /*                                  Adjetivos:                                           */
