@@ -30,8 +30,8 @@ g_nominal(sn(S1,S2),N)      --> dicES:nombre(S1,_,N), dicES:nombre(S2,_,N).
 g_nominal(sn(M,S),N)        --> dicES:determinante(M,G,N), dicES:nombre(S,G,N).
 g_nominal(sn(M,S,SA),N)     --> dicES:determinante(M,G,N), dicES:nombre(S,G,N), g_adjetival(SA).
 g_nominal(sn(M,S,SP),N)     --> dicES:determinante(M,G,N), dicES:nombre(S,G,N), g_prepocicional(SP,N).
+g_nominal(sn(M,S,A,SP),N)   --> dicES:determinante(M,G,N), dicES:nombre(S,G,N), dicES:adjetivo(A), g_prepocicional(SP,_).
 g_nominal(sn(M,S,SB,SA),N)  --> dicES:determinante(M,G,N), dicES:nombre(S,G,N), dicES:conjuncion_c(SB), g_adjetival(SA).
-
 /*****************************************************************************************/
 /*                                Grupos Verbales:                                       */
 /*****************************************************************************************/

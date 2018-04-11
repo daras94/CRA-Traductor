@@ -10,7 +10,7 @@ translate :-  nl, write('┏━━━━━━━━━━━━━━━━━�
         	  nl, write('┃  ---> Collecion de frases a Traducir:                                                                           ┃'),
               nl, write('┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫'),
        		  nl, write('┃  0)  - El hombre come una manzana.                            - The man eats an apple.                          ┃'),
-        	  nl, write('┃  1)  - Ellos comen manzanas.                                  - They eat some apples.                           ┃'),
+        	  nl, write('┃  1)  - Ellos comen manzanas.                                  - They eat apples.                           ┃'),
         	  nl, write('┃  2)  - Tú comes una manzana roja.                             - You eat a red apple.                            ┃'),
         	  nl, write('┃  3)  - Juan ama a Marı́a.                                      - John loves Mary.                                ┃'),
         	  nl, write('┃  4)  - El gato grande come un ratón gris.                     - The big cat eats a grey mouse.                  ┃'),
@@ -51,7 +51,7 @@ embebed_bd(X, Y, Lang) :- ((Y = 0,  Lang = es-in) -> (X=[el, hombre, come, una, 
                            (Y = 10, Lang = es-in) -> (X=[el, canario, amarillo, canta, muy, bien], !);                     
                            (Y = 10, Lang = in-es) -> (X=[the, yellow, canary, sings, very, well], !);
                            (Y = 11, Lang = es-in) -> (X=[juan, toma, un, café, y, lee, el, periódico], !);
-                           (Y = 11, Lang = in-es) -> (X=[john, has, a, coffee, and, reads, theewspaper], !);
+                           (Y = 11, Lang = in-es) -> (X=[john, has, a, coffee, and, reads, the, newspaper], !);
                            (Y = 12, Lang = es-in) -> (X=[juan, es, delgado, y, maría, es, alta], !);                               
                            (Y = 12, Lang = in-es) -> (X=[john, is, thin, and, mary, is, tall], !);
                            (Y = 13, Lang = es-in) -> (X=[oscar, wilde, escribió, el, fantasma, de, canterville], !);

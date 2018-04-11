@@ -56,7 +56,7 @@ nombre(n(n_15), m, sg) --> [jardín].
 nombre(n(n_16), m, sg) --> [canario].
 nombre(n(n_17), m, sg) --> [oscar].
 nombre(n(n_18), m, sg) --> [wilde].                               
-nombre(n(n_19), m, sg) --> [café].   
+nombre(n(n_19), _, sg) --> [café].   
 nombre(n(n_20), m, sg) --> [periódico].     
 nombre(n(n_21), m, sg) --> [fantasma]. 
 nombre(n(n_22), m, sg) --> [canterville].
@@ -108,14 +108,14 @@ pronombre(pron(pron_2), sg) --> [él].
 pronombre(pron(pron_3), pl) --> [ellos].
                     
 %relativo
-%pronombre(pron(pron_4), sg) --> [que].
+pronombre(pron(pron_4), sg) --> [que].
 
 /*****************************************************************************************/
 /*                                 Conjunciones:                                         */
 /*****************************************************************************************/
 % Subordinadas
 % Cordinadas.
-conjuncion_s(conj_s(conj_s1)) --> [que].
+%conjuncion_s(conj_s(conj_s1)) --> [que].
 conjuncion_c(conj_c(conj_c1)) --> [y].
 
 /*****************************************************************************************/

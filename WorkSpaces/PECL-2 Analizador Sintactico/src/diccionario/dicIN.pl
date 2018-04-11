@@ -42,7 +42,7 @@ noun(n(n_7), pl, v)                --> [apples].
 noun(n(n_8), sg, c)                --> [cat].
 noun(n(n_8), pl, c)                --> [cats].
 noun(n(n_9), sg, c)                --> [cat].
-noun(n(n_9), pl, c)                --> [gatas].
+noun(n(n_9), pl, c)                --> [cats].
 noun(n(n_10), sg, c)               --> [mouse].
 noun(n(n_10), pl, c)               --> [mice].
 noun(n(n_11), sg, c)               --> [student].
@@ -55,10 +55,10 @@ noun(n(n_15), sg, c) 			   --> [garden].
 noun(n(n_16), sg, c) 			   --> [canary].
 noun(n(n_17), sg, c) 			   --> [oscar].
 noun(n(n_18), sg, c) 			   --> [wilde].                              
-noun(n(n_19), sg, c) 			   --> [coffe].   
+noun(n(n_19), sg, c) 			   --> [coffee].   
 noun(n(n_20), sg, c) 			   --> [newspaper].    
-noun(n(n_21), sg, c) 			   --> [ghost]. 
-noun(n(n_22), sg, c) 			   --> [canterville]. 
+noun(n(n_21), sg, c) 			   --> [canterville]. 
+noun(n(n_22), sg, c) 			   --> [ghost]. 
 
 /*****************************************************************************************/
 /*                                     verbs:                                            */
@@ -108,8 +108,7 @@ pronoun(pron(pron_1), sg) --> [you].
 pronoun(pron(pron_2), sg) --> [he].
 pronoun(pron(pron_3), pl) --> [they].
 % Relativo
-pronoun(pron(pron_9), pl) --> [that].
-pronoun(pron(pron_9), sg) --> [that].
+pronoun(pron(pron_9), _) --> [that].
 
 /*****************************************************************************************/
 /*                                  Conjunctions:                                        */
