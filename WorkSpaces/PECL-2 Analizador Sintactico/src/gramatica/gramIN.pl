@@ -24,7 +24,7 @@ sentence(o(O1,CC,O2))      --> sentence(O1), dicIN:conjunctions_coord(CC), sente
 nom_p(sn(S),N,_)          --> dicIN:noun(S,N, _).
 nom_p(sn(S1,S2),N,_)      --> dicIN:noun(S1,N, _), dicIN:noun(S2,N, _).
 nom_p(sn(M,S),N,Det)      --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C).
-nom_p(sn(M,S,SA),N,Det)   --> dicIN:determiner(M,C,Det), nom_adj(SA,N, C), dicIN:noun(S,N,_).
+nom_p(sn(M,S,SA),N,Det)   --> dicIN:determiner(M,C,Det), nom_adj(SA,N,C), dicIN:noun(S,N,_).
 nom_p(sn(M,S,SP),N,Det)   --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C), nom_pre(SP,N).
 nom_p(sn(M,S,CC),N,Det)   --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C), dicIN:pronoun(CC,N).
 
@@ -34,7 +34,7 @@ nom_p(sn(M,S,CC),N,Det)   --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C), dicI
 nom_v(sv(V),N)      --> dicIN:verb(V,N).
 nom_v(sv(V,SN),N)   --> dicIN:verb(V,N), nom_p(SN,N,_).
 nom_v(sv(V,SP),N)   --> dicIN:verb(V,N), nom_pre(SP,N).
-nom_v(sv(V,SAJ),N)  --> dicIN:verb(V,N), nom_adj(SAJ,N).
+nom_v(sv(V,SAJ),N)  --> dicIN:verb(V,N), nom_adj(SAJ,N,_).
 nom_v(sv(V,SAV),N)  --> dicIN:verb(V,N), nom_adv(SAV,N).
 
 /*****************************************************************************************/
@@ -45,8 +45,8 @@ nom_pro(sp(P,V),N)  --> dicIN:pronoun(P, N), nom_v(V,N).
 /*****************************************************************************************/
 /*                                Grupos Adjetival:                                      */
 /*****************************************************************************************/
-nom_adj(saj(A),N, C)         --> dicIN:adjective(A,N,C).
-nom_adj(saj(AJ,SP),N,C)      --> dicIN:adjective(AJ,N,C),  nom_pre(SP,N).
+nom_adj(saj(A),N,C)          --> dicIN:adjective(A,N,C).
+nom_adj(saj(AJ,SP),N,C)      --> dicIN:adjective(AJ,N,C), nom_pre(SP,N).
 nom_adj(saj(ADV,AJ),N,C)     --> dicIN:adverb(ADV), dicIN:adjective(AJ,N,C).
 nom_adj(saj(ADV,AJ,SP),N,C)  --> dicIN:adverb(ADV), dicIN:adjective(AJ,N,C), nom_pre(SP,N).
 nom_adj(saj(ADV,AJ,ADV),N,C) --> dicIN:adverb(ADV), dicIN:adjective(AJ,N,C), nom_adv(ADV,N).
@@ -56,8 +56,8 @@ nom_adj(saj(ADV,AJ,ADV),N,C) --> dicIN:adverb(ADV), dicIN:adjective(AJ,N,C), nom
 /*****************************************************************************************/
 nom_adv(sadv(ADV),_)       --> dicIN:adverb(ADV).
 nom_adv(sadv(CU,ADV),_)    --> dicIN:adverb(CU),  dicIN:adverb(ADV).
-nom_adv(sadv(ADV,SP),N)    --> dicIN:adverb(ADV), nom_pre(SP,N,_).
-nom_adv(sadv(ADV,SN),N)    --> dicIN:adverb(ADV), nom_pre(SN,N,_).
+nom_adv(sadv(ADV,SP),N)    --> dicIN:adverb(ADV), nom_pre(SP,N).
+nom_adv(sadv(ADV,SN),N)    --> dicIN:adverb(ADV), nom_pre(SN,N).
 
 
 /*****************************************************************************************/

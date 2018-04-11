@@ -102,7 +102,6 @@ adjetivo(adj(adj_5))  --> [pequeño].
 adjetivo(adj(adj_6))  --> [delgado].
 adjetivo(adj(adj_7))  --> [alta].
 adjetivo(adj(adj_8))  --> [amarillo].
-adjetivo(adj(adj_9))  --> [delgado].
 
 /*****************************************************************************************/
 /*                                  Pronombres:                                          */

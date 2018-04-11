@@ -92,11 +92,10 @@ verb(v(v_17),pl)                --> [saw].
 adjective(adj(adj_1), sg, c) --> [red].
 adjective(adj(adj_2), sg, c) --> [black].
 adjective(adj(adj_4), sg, c) --> [gray].
-adjective(adj(adj_3), sg, c) --> [large].
+adjective(adj(adj_3), sg, c) --> [big].
 adjective(adj(adj_5), sg, c) --> [little].
 adjective(adj(adj_6), sg, c) --> [thin].
 adjective(adj(adj_7), sg, c) --> [tall].
-adjective(adj(adj_9), sg, c) --> [thin].
 
 % Possessive
 adjective(adj(adj_8), sg, v) --> [yellow].
