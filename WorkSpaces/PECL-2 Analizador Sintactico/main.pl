@@ -29,37 +29,37 @@ translate :-  nl, write('┏━━━━━━━━━━━━━━━━━�
         	  nl, embebed_bd(X, Y, Lang), select_lang(Lang, X).
 
 embebed_bd(X, Y, Lang) :- ((Y = 0,  Lang = es-in) -> (X=[el, hombre, come, una, manzana], !);                              
-                                                   (Y = 0,  Lang = in-es) -> (X=[the, man, eats, an, apple], !);
-                                                   (Y = 1,  Lang = es-in) -> (X=[ellos, comen, manzanas], !);                                              
-                                                   (Y = 1,  Lang = in-es) -> (X=[they, eat, some, apples], !);
-                                                   (Y = 2,  Lang = es-in) -> (X=[tú, comes, una, manzana, roja], !); 
-                                                   (Y = 2,  Lang = in-es) -> (X=[you, eat, a, red, apple], !);
-                                                   (Y = 3,  Lang = es-in) -> (X=[juan, ama, a, maría], !);                              
-                                                   (Y = 3,  Lang = in-es) -> (X=[john, loves, mary], !);
-                                                   (Y = 4,  Lang = es-in) -> (X=[el, gato, grande, come, un, ratón, gris], !);
-                                                   (Y = 4,  Lang = in-es) -> (X=[the, big, cat, eats, a, grey, mouse], !);
-                                                   (Y = 5,  Lang = es-in) -> (X=[juan, estudia, en, la, universidad], !);
-                                                   (Y = 5,  Lang = in-es) -> (X=[john, studies, at, university], !);
-                                                   (Y = 6,  Lang = es-in) -> (X=[el, alumno, ama, la, universidad], !);                                    
-                                                   (Y = 6,  Lang = in-es) -> (X=[the, student, loves, university], !);
-                                                   (Y = 7,  Lang = es-in) -> (X=[el, perro, persiguió, un, gato, negro, en, el, jardín], !); 
-                                                   (Y = 7,  Lang = in-es) -> (X=[the, dog, chased, a, black, cat, in, the, garden], !);
-                                                   (Y = 8,  Lang = es-in) -> (X=[la, universidad, es, grande], !);
-                                                   (Y = 8,  Lang = in-es) -> (X=[the, university, is, large], !);
-                                                   (Y = 9,  Lang = es-in) -> (X=[el, hombre, que, vimos, ayer, es, mi, vecino], !); 
-                                                   (Y = 9,  Lang = in-es) -> (X=[the, man, that, we, saw, yesterday, is, my, neighbour], !);
-                                                   (Y = 10, Lang = es-in) -> (X=[el, canario, amarillo, canta, muy, bien], !);                     
-                                                   (Y = 10, Lang = in-es) -> (X=[the, yellow, canary, sings, very, well], !);
-                                                   (Y = 11, Lang = es-in) -> (X=[juan, toma, un, café, y, lee, el, periódico], !);
-                                                   (Y = 11, Lang = in-es) -> (X=[john, has, a, coffee, and, reads, theewspaper], !);
-                                                   (Y = 12, Lang = es-in) -> (X=[juan, es, delgado, y, maría, es, alta], !);                               
-                                                   (Y = 12, Lang = in-es) -> (X=[john, is, thin, and, mary, is, tall], !);
-                                                   (Y = 13, Lang = es-in) -> (X=[oscar, wilde, escribió, el, fantasma, de, canterville], !);
-                                                   (Y = 13, Lang = in-es) -> (X=[oscar, wilde, wrote, the, canterville, host], !);
-                                                   (Y = x;  Lang = x    ) -> (nl, write(' - As salido ADIOS!!!.'), !);
-                                                   (Y = _,  Lang = _    ) -> (nl, write(' - ERROR: Opciones escogidas no validas.'), translate)).
+                           (Y = 0,  Lang = in-es) -> (X=[the, man, eats, an, apple], !);
+                           (Y = 1,  Lang = es-in) -> (X=[ellos, comen, manzanas], !);                                              
+                           (Y = 1,  Lang = in-es) -> (X=[they, eat, apples], !);
+                           (Y = 2,  Lang = es-in) -> (X=[tú, comes, una, manzana, roja], !); 
+                           (Y = 2,  Lang = in-es) -> (X=[you, eat, a, red, apple], !);
+                           (Y = 3,  Lang = es-in) -> (X=[juan, ama, a, maría], !);                              
+                           (Y = 3,  Lang = in-es) -> (X=[john, loves, mary], !);
+                           (Y = 4,  Lang = es-in) -> (X=[el, gato, grande, come, un, ratón, gris], !);
+                           (Y = 4,  Lang = in-es) -> (X=[the, big, cat, eats, a, grey, mouse], !);
+                           (Y = 5,  Lang = es-in) -> (X=[juan, estudia, en, la, universidad], !);
+                           (Y = 5,  Lang = in-es) -> (X=[john, studies, at, university], !);
+                           (Y = 6,  Lang = es-in) -> (X=[el, alumno, ama, la, universidad], !);                                    
+                           (Y = 6,  Lang = in-es) -> (X=[the, student, loves, university], !);
+                           (Y = 7,  Lang = es-in) -> (X=[el, perro, persiguió, un, gato, negro, en, el, jardín], !); 
+                           (Y = 7,  Lang = in-es) -> (X=[the, dog, chased, a, black, cat, in, the, garden], !);
+                           (Y = 8,  Lang = es-in) -> (X=[la, universidad, es, grande], !);
+                           (Y = 8,  Lang = in-es) -> (X=[the, university, is, large], !);
+                           (Y = 9,  Lang = es-in) -> (X=[el, hombre, que, vimos, ayer, es, mi, vecino], !); 
+                           (Y = 9,  Lang = in-es) -> (X=[the, man, that, we, saw, yesterday, is, my, neighbour], !);
+                           (Y = 10, Lang = es-in) -> (X=[el, canario, amarillo, canta, muy, bien], !);                     
+                           (Y = 10, Lang = in-es) -> (X=[the, yellow, canary, sings, very, well], !);
+                           (Y = 11, Lang = es-in) -> (X=[juan, toma, un, café, y, lee, el, periódico], !);
+                           (Y = 11, Lang = in-es) -> (X=[john, has, a, coffee, and, reads, theewspaper], !);
+                           (Y = 12, Lang = es-in) -> (X=[juan, es, delgado, y, maría, es, alta], !);                               
+                           (Y = 12, Lang = in-es) -> (X=[john, is, thin, and, mary, is, tall], !);
+                           (Y = 13, Lang = es-in) -> (X=[oscar, wilde, escribió, el, fantasma, de, canterville], !);
+                           (Y = 13, Lang = in-es) -> (X=[oscar, wilde, wrote, the, canterville, ghost], !);
+                           (Y = x,  Lang = x    ) -> (nl, write(' - As salido ADIOS!!!.'), !);
+                           (Y = _;  Lang = _    ) -> (nl, write(' - ERROR: Opciones escogidas no validas.'), translate)).
 
-select_lang(Lang, Z) :- ((Lang = es-in) -> (gramES:oracion(Y, Z,  []), nl, write(Y), gramIN:sentence(Y, IN, []), draw(Y), nl, write(' - Traduccíon ES-IN: '), writeln(IN), translate);    % Español - Ingles.
-                         (Lang = in-es) -> (gramES:oracion(Y, ES, []), nl, write(Y), gramIN:sentence(Y, Z,  []), draw(Y), nl, write(' - Traduccíon IN-ES: '), writeln(ES), translate)).   % Ingles  - Español.
+select_lang(Lang, Z) :- ((Lang = es-in) -> (gramES:oracion(Y, Z, []),  nl, write(Y), gramIN:sentence(Y, IN, []), draw(Y), nl, write(' - Traduccíon ES-IN: '), writeln(IN), translate);    % Español - Ingles.
+                         (Lang = in-es) -> (gramIN:sentence(Y, Z, []), nl, write(Y), gramES:oracion(Y, ES, []), draw(Y), nl, write(' - Traduccíon IN-ES: '), writeln(ES), translate)).   % Ingles  - Español.
                                           
                                           

@@ -10,8 +10,6 @@
 /*****************************************************************************************/
 determinante(det(det_2), f, sg) --> [la].
 determinante(det(det_1), m, sg) --> [el].
-determinante(det(det_1), f, pl) --> [las].
-determinante(det(det_1), m, pl) --> [los].
 determinante(det(det_3), f, sg) --> [una].
 determinante(det(det_3), m, sg) --> [un].
 determinante(det(det_4), f, pl) --> [unas].
@@ -52,18 +50,16 @@ nombre(n(n_11), m, sg) --> [alumno].
 nombre(n(n_11), m, pl) --> [alumnos].
 nombre(n(n_12), f, sg) --> [alumna].
 nombre(n(n_12), f, pl) --> [alumnas].
-nombre(n(n_13), m, sg) --> [universidad].
-nombre(n(n_13), f, sg) --> [universidad].
+nombre(n(n_13), _, sg) --> [universidad].
 nombre(n(n_14), m, sg) --> [perro].
 nombre(n(n_15), m, sg) --> [jardín].
-nombre(n(n_15), f, sg) --> [jardín].
 nombre(n(n_16), m, sg) --> [canario].
-nombre(n(n_17), m, sg) --> [oscar]; [wilde].                              
-nombre(n(n_18), m, sg) --> [café].   
-nombre(n(n_18), f, sg) --> [café].   
-nombre(n(n_19), m, sg) --> [periódico].    
-nombre(n(n_20), m, sg) --> [fantasma]. 
-nombre(n(n_21), m, sg) --> [canterville]. 
+nombre(n(n_17), m, sg) --> [oscar].
+nombre(n(n_18), m, sg) --> [wilde].                               
+nombre(n(n_19), m, sg) --> [café].   
+nombre(n(n_20), m, sg) --> [periódico].     
+nombre(n(n_21), m, sg) --> [fantasma]. 
+nombre(n(n_22), m, sg) --> [canterville].
 /*****************************************************************************************/
 /*                                     Verbos:                                           */
 /*****************************************************************************************/

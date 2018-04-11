@@ -9,9 +9,9 @@
 /*****************************************************************************************/
 /*                                 modificadores:                                        */
 /*****************************************************************************************/
-determiner(det(det_2), _, no_det)  --> [].
 determiner(det(det_1), _, si_det)  --> [the].
 determiner(det(det_2), _, si_det)  --> [the].
+determiner(det(det_2), _, no_det)  --> [].
 determiner(det(det_3), c, si_det)  --> [a].
 determiner(det(det_3), v, si_det)  --> [an].
 determiner(det(det_4), _, si_det)  --> [some].
@@ -53,11 +53,12 @@ noun(n(n_13), sg, c)               --> [university].
 noun(n(n_14), sg, c)      		   --> [dog].
 noun(n(n_15), sg, c) 			   --> [garden].
 noun(n(n_16), sg, c) 			   --> [canary].
-noun(n(n_17), sg, c) 			   --> [oscar]; [wilde].                              
-noun(n(n_18), sg, c) 			   --> [coffe].   
-noun(n(n_19), sg, c) 			   --> [newspaper].    
-noun(n(n_20), sg, c) 			   --> [ghost]. 
-noun(n(n_21), sg, c) 			   --> [canterville]. 
+noun(n(n_17), sg, c) 			   --> [oscar].
+noun(n(n_18), sg, c) 			   --> [wilde].                              
+noun(n(n_19), sg, c) 			   --> [coffe].   
+noun(n(n_20), sg, c) 			   --> [newspaper].    
+noun(n(n_21), sg, c) 			   --> [ghost]. 
+noun(n(n_22), sg, c) 			   --> [canterville]. 
 
 /*****************************************************************************************/
 /*                                     verbs:                                            */
@@ -91,8 +92,8 @@ verb(v(v_17),pl)                --> [saw].
 % Los Singulares Invariables.
 adjective(adj(adj_1), sg, c) --> [red].
 adjective(adj(adj_2), sg, c) --> [black].
-adjective(adj(adj_4), sg, c) --> [gray].
-adjective(adj(adj_3), sg, c) --> [big].
+adjective(adj(adj_4), sg, c) --> [grey].
+adjective(adj(adj_3), sg, c) --> [big]; [large].
 adjective(adj(adj_5), sg, c) --> [little].
 adjective(adj(adj_6), sg, c) --> [thin].
 adjective(adj(adj_7), sg, c) --> [tall].
@@ -121,5 +122,5 @@ conjunctions_coord(conj_c(conj_c1)) --> [and].
 /*                                    adverbs:                                           */
 /*****************************************************************************************/
 adverb(adv(adv_1)) --> [very].
-adverb(adv(adv_2)) --> [good].
+adverb(adv(adv_2)) --> [well].
 adverb(adv(adv_3)) --> [yesterdays].
