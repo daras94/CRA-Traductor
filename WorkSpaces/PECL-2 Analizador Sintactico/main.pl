@@ -16,7 +16,7 @@ translate :-  nl, write('┏━━━━━━━━━━━━━━━━━�
         	  nl, write('┃  4)  - El gato grande come un ratón gris.                     - The big cat eats a grey mouse.                  ┃'),
         	  nl, write('┃  5)  - Juan estudia en la universidad.                        - John studies at university.                     ┃'),
         	  nl, write('┃  6)  - El alumno ama la universidad.                          - The student loves university.                   ┃'),
-        	  nl, write('┃  7)  - El perro persiguió un gato negro en el jardı́n.         - The dog chased a blackcat in the garden.        ┃'),
+        	  nl, write('┃  7)  - El perro persiguió un gato negro en el jardı́n.         - The dog chased a black cat in the garden.       ┃'),
         	  nl, write('┃  8)  - La Universidad es grande.                              - The University is large.                        ┃'),
         	  nl, write('┃  9)  - El hombre que vimos ayer es mi vecino.                 - The man (that) we saw yesterdays my neighbour.  ┃'),
         	  nl, write('┃  10) - El canario amarillo canta muy bien.                    - The yellow canary sings very well.              ┃'),
@@ -29,7 +29,7 @@ translate :-  nl, write('┏━━━━━━━━━━━━━━━━━�
         	  nl, embebed_bd(X, Y, Lang), select_lang(Lang, X).
 
 embebed_bd(X, Y, Lang) :- ((Y = 0,  Lang = es-in) -> (X=[el, hombre, come, una, manzana], !);                              
-                                                   (Y = 0,  Lang = in-es) -> (X=[the, man, eats, a, apple], !);
+                                                   (Y = 0,  Lang = in-es) -> (X=[the, man, eats, an, apple], !);
                                                    (Y = 1,  Lang = es-in) -> (X=[ellos, comen, manzanas], !);                                              
                                                    (Y = 1,  Lang = in-es) -> (X=[they, eat, some, apples], !);
                                                    (Y = 2,  Lang = es-in) -> (X=[tú, comes, una, manzana, roja], !); 
@@ -60,6 +60,6 @@ embebed_bd(X, Y, Lang) :- ((Y = 0,  Lang = es-in) -> (X=[el, hombre, come, una, 
                                                    (Y = _,  Lang = _    ) -> (nl, write(' - ERROR: Opciones escogidas no validas.'), translate)).
 
 select_lang(Lang, Z) :- ((Lang = es-in) -> (gramES:oracion(Y, Z,  []), nl, write(Y), gramIN:sentence(Y, IN, []), draw(Y), nl, write(' - Traduccíon ES-IN: '), writeln(IN), translate);    % Español - Ingles.
-                                                 (Lang = in-es) -> (gramES:oracion(Y, ES, []), nl, write(Y), gramIN:sentence(Y, Z,  []),draw(Y), nl, write(' - Traduccíon IN-ES: '), writeln(ES), translate)).   % Ingles  - Español.
+                         (Lang = in-es) -> (gramES:oracion(Y, ES, []), nl, write(Y), gramIN:sentence(Y, Z,  []), draw(Y), nl, write(' - Traduccíon IN-ES: '), writeln(ES), translate)).   % Ingles  - Español.
                                           
                                           
