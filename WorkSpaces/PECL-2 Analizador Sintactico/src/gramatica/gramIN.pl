@@ -21,11 +21,11 @@ sentence(o(O1,CC,O2))      --> sentence(O1), dicIN:conjunctions_coord(CC), sente
 /*****************************************************************************************/
 /*                                Grupos Nominales:                                      */
 /*****************************************************************************************/
-nom_p(sn(S),N,no_det)     --> dicIN:noun(S,N, _).
-nom_p(sn(S1,S2),N,no_det) --> dicIN:noun(S1,N, _), dicIN:noun(S2,N, _).
+nom_p(sn(S),N,_)          --> dicIN:noun(S,N, _).
+nom_p(sn(S1,S2),N,_)      --> dicIN:noun(S1,N, _), dicIN:noun(S2,N, _).
 nom_p(sn(M,S),N,Det)      --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C).
 nom_p(sn(M,S,SA),N,Det)   --> dicIN:determiner(M,C,Det), nom_adj(SA,N, C), dicIN:noun(S,N,_).
-nom_p(sn(M,S,SP),N,Det)   --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C), nom_pre(SP,N, Det).
+nom_p(sn(M,S,SP),N,Det)   --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C), nom_pre(SP,N).
 nom_p(sn(M,S,CC),N,Det)   --> dicIN:determiner(M,C,Det), dicIN:noun(S,N,C), dicIN:pronoun(CC,N).
 
 /*****************************************************************************************/
@@ -56,11 +56,12 @@ nom_adj(saj(ADV,AJ,ADV),N,C) --> dicIN:adverb(ADV), dicIN:adjective(AJ,N,C), nom
 /*****************************************************************************************/
 nom_adv(sadv(ADV),_)       --> dicIN:adverb(ADV).
 nom_adv(sadv(CU,ADV),_)    --> dicIN:adverb(CU),  dicIN:adverb(ADV).
-nom_adv(sadv(ADV,SP),N)    --> dicIN:adverb(ADV), nom_pre(SP,N).
-nom_adv(sadv(ADV,SN),N)    --> dicIN:adverb(ADV), nom_pre(SN,N).
+nom_adv(sadv(ADV,SP),N)    --> dicIN:adverb(ADV), nom_pre(SP,N,_).
+nom_adv(sadv(ADV,SN),N)    --> dicIN:adverb(ADV), nom_pre(SN,N,_).
 
 
 /*****************************************************************************************/
 /*                                Grupos Prepocicional:                                  */
-/*****************************************************************************************/
+/*******************************************************************************0**********/
 nom_pre(sp(P, GN),G)   --> dicIN:preposition(P, Det), nom_p(GN,G, Det).
+

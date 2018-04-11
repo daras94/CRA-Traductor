@@ -8,7 +8,7 @@
 /*****************************************************************************************/
 /*                               Determinantes:                                          */
 /*****************************************************************************************/
-determinante(det(det_1), f, sg) --> [la].
+determinante(det(det_2), f, sg) --> [la].
 determinante(det(det_1), m, sg) --> [el].
 determinante(det(det_1), f, pl) --> [las].
 determinante(det(det_1), m, pl) --> [los].

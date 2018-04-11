@@ -9,8 +9,9 @@
 /*****************************************************************************************/
 /*                                 modificadores:                                        */
 /*****************************************************************************************/
-determiner(det(det_1), _, no_det)  --> [].
+determiner(det(det_2), _, no_det)  --> [].
 determiner(det(det_1), _, si_det)  --> [the].
+determiner(det(det_2), _, si_det)  --> [the].
 determiner(det(det_3), c, si_det)  --> [a].
 determiner(det(det_3), v, si_det)  --> [an].
 determiner(det(det_4), _, si_det)  --> [some].
@@ -20,7 +21,7 @@ determiner(det(det_5), _, si_det)  --> [my].
 /*****************************************************************************************/
 preposition(prep(prep_1), _)       --> [].
 preposition(prep(prep_2), no_det)  --> [at].
-preposition(prep(prep_2), _)  --> [in].
+preposition(prep(prep_2), si_det)  --> [in].
 preposition(prep(prep_3), _)	   --> [].
 
 /*****************************************************************************************/
