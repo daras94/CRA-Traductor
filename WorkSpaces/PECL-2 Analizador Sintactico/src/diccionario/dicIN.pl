@@ -122,4 +122,4 @@ conjunctions_coord(conj_c(conj_c1)) --> [and].
 /*****************************************************************************************/
 adverb(adv(adv_1)) --> [very].
 adverb(adv(adv_2)) --> [well].
-adverb(adv(adv_3)) --> [yesterdays].
+adverb(adv(adv_3)) --> [yesterday].
